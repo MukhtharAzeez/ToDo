@@ -6,6 +6,7 @@ function App() {
   const [toDos, setToDos] = useState([])
   const [toDo,setToDo] = useState('')
   return (
+
     <div className="app">
       <div className="mainHeading">
         <h1>ToDo List</h1>
@@ -18,6 +19,7 @@ function App() {
           if(toDo.length>0){
             setToDos([...toDos,{id : Date.now(),text:toDo,status : false}]);
           }
+          setToDo('')
           }}></i>
       </div>
 
